@@ -1,0 +1,61 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "cd packages/react-left-nav && npm start",
+    "precommit": "lint-staged",
+    "lint": "node node_modules/eslint/bin/eslint.js --max-warnings=0 packages/app/src && node node_modules/eslint/bin/eslint.js --max-warnings=0 packages/app/utility && node node_modules/eslint/bin/eslint.js --max-warnings=0 packages/app/test"
+  },
+  "devDependencies": {
+    "eslint-config-react-app": "3.0.6",
+    "husky": "1.2.1",
+    "lint-staged": "8.1.0",
+    "prettier": "1.15.3"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/eslint-config-react-app/index.js",
+    "settings": {
+      "react": {
+        "version": "16.7.0"
+      }
+    },
+    "rules": {
+      "no-console": 1,
+      "react/default-props-match-prop-types": 1,
+      "react/prop-types": 1,
+      "react/no-unused-prop-types": 1,
+      "react/sort-prop-types": [
+        true,
+        {
+          "ignoreCase": true,
+          "sortShapeProp": true
+        }
+      ]
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "prettier": {
+    "jsxBracketSameLine": true,
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true
+  },
+  "lint-staged": {
+    "linters": {
+      "packages/**/src/*.{css,html,js,json,md,scss}": [
+        "prettier --write",
+        "npm run lint",
+        "git add"
+      ],
+      "yarn.lock": [
+        "git rm --cached"
+      ]
+    }
+  }
+}

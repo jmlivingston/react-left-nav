@@ -1,0 +1,71 @@
+@import '../../_variables';
+
+.sidebar {
+  /* Required */
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  /* Custom */
+  background: $background;
+  color: $color;
+  left: -16em;
+  top: 56px;
+  transition: all 0.075s ease-in;
+  width: 16em;
+  box-shadow: $boxShadowRight;
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li.sidebar-item {
+      cursor: pointer;
+      padding: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border-bottom: 1px solid $borderColor;
+      &.active {
+        background-color: $backgroundHover;
+      }
+      &:hover {
+        background-color: $backgroundHover;
+      }
+    }
+  }
+}
+
+/* Small width */
+@media (min-width: 42em) {
+  .sidebar {
+    width: 4em;
+    left: 0;
+    li.sidebar-item {
+      text-align: center;
+      .sidebar-item-title {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Medium width */
+@media (min-width: 54em) {
+  .sidebar {
+    width: 8em;
+    left: 0;
+    li.sidebar-item {
+      text-align: center;
+      .sidebar-item-title {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/* Large width */
+@media (min-width: 68em) {
+  .sidebar {
+    li.sidebar-item {
+      text-align: left;
+    }
+    width: 16em;
+  }
+}

@@ -1,0 +1,36 @@
+/* Small width */
+@media (min-width: 42em) {
+  .sidebar {
+    .sidebar-item {
+      i {
+        font-size: 2em;
+        display: block;
+      }
+    }
+  }
+}
+
+/* Medium width */
+@media (min-width: 54em) {
+  .sidebar {
+    .sidebar-item {
+      i {
+        font-size: 3em;
+        display: block;
+      }
+    }
+  }
+}
+
+/* Large width */
+@media (min-width: 68em) {
+  .sidebar {
+    .sidebar-item {
+      i {
+        display: inline-block;
+        font-size: 1em;
+        margin-right: 8px;
+      }
+    }
+  }
+}
