@@ -1,16 +1,18 @@
 {
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/demo",
+    "packages/react-left-nav/lib"
   ],
   "scripts": {
-    "start": "cd packages/react-left-nav && npm start",
+    "start": "lerna run --parallel start",
     "precommit": "lint-staged",
-    "lint": "node node_modules/eslint/bin/eslint.js --max-warnings=0 packages/app/src && node node_modules/eslint/bin/eslint.js --max-warnings=0 packages/app/utility && node node_modules/eslint/bin/eslint.js --max-warnings=0 packages/app/test"
+    "lint": "node node_modules/eslint/bin/eslint.js --max-warnings=0 packages/demo/src && node node_modules/eslint/bin/eslint.js --max-warnings=0 packages/react-left-nav/src"
   },
   "devDependencies": {
     "eslint-config-react-app": "3.0.6",
     "husky": "1.2.1",
+    "lerna": "3.8.0",
     "lint-staged": "8.1.0",
     "prettier": "1.15.3"
   },
@@ -48,7 +50,7 @@
   },
   "lint-staged": {
     "linters": {
-      "packages/**/src/*.{css,html,js,json,md,scss}": [
+      "packages/**/src/*.{css,html,js,json,md}": [
         "prettier --write",
         "npm run lint",
         "git add"

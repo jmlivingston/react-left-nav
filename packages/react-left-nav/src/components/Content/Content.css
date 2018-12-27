@@ -1,17 +1,17 @@
 @media (min-width: 42em) {
-  .sidebar-content {
+  .content {
     margin-left: 4em;
   }
 }
 
 @media (min-width: 54em) {
-  .sidebar-content {
+  .content {
     margin-left: 8em;
   }
 }
 
 @media (min-width: 68em) {
-  .sidebar-content {
+  .content {
     margin-left: 16em;
   }
 }
