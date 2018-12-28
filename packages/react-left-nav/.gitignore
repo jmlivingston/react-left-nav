@@ -1,8 +1,8 @@
 /coverage
 /demo/dist
 /es
-/lib
-!/lib/package.json
+/lib/**/*.js
+/lib/**/*.css
 /node_modules
 /umd
 npm-debug.log*

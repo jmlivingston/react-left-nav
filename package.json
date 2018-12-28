@@ -50,7 +50,7 @@
   },
   "lint-staged": {
     "linters": {
-      "packages/**/{src,lib}/*.{css,html,js,json,md}": [
+      "packages/**/{src,lib}/*.{css,html,js,md}": [
         "prettier --write",
         "npm run lint",
         "git add"
