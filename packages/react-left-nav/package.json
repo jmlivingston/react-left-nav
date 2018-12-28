@@ -1,6 +1,6 @@
 {
   "name": "react-left-nav-src",
-  "version": "0.0.1",
+  "version": "0.0.1-beta.1",
   "description": "A simple responsive left nav (sidebar) for React.",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -28,10 +28,9 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
-  "author": "",
-  "homepage": "",
+  "author": "John Livingston",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/jmlivingston/react-left-nav",
   "keywords": [
     "react-component"
   ]

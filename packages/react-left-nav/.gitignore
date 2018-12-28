@@ -2,6 +2,7 @@
 /demo/dist
 /es
 /lib
+!/lib/package.json
 /node_modules
 /umd
 npm-debug.log*
