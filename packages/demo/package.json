@@ -10,11 +10,10 @@
     "bootstrap": "4.2.1",
     "prop-types": "15.6.2",
     "react-dom": "16.7.0-alpha.2",
-    "react-left-nav": "*",
+    "react-left-nav": "file:../react-left-nav/lib",
     "react": "16.7.0-alpha.2"
   },
   "devDependencies": {
-    "node-sass": "4.11.0",
     "react-scripts": "2.1.2"
   },
   "browserslist": [

@@ -1,13 +1,17 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import './Content.css'
+import useMediaQuery from './hooks/useMediaQuery'
+import styles from './styles'
 
-const Content = ({ children }) => {
-  return <div className="content">{children}</div>
+const Content = ({ children, style = {}, breakPoints = styles.contentBreakPoints }) => {
+  const breakPointStyle = useMediaQuery(breakPoints)
+  return <div style={{ ...breakPointStyle, ...style }}>{children}</div>
 }
 
 Content.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
+  breakPoints: PropTypes.array,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+  style: PropTypes.object
 }
 
 export default Content

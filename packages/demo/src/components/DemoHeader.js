@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DemoNavbar = () => {
+const DemoHeader = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-secondary">
       <a className="navbar-brand" href="/">
@@ -41,4 +41,4 @@ const DemoNavbar = () => {
   )
 }
 
-export default DemoNavbar
+export default DemoHeader
