@@ -1,6 +1,6 @@
 {
   "name": "react-left-nav-src",
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1-beta.2",
   "description": "A simple responsive left nav (sidebar) for React.",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -22,7 +22,7 @@
     "test:watch": "nwb test-react --server"
   },
   "peerDependencies": {
-    "react": "16.x"
+    "react": "16.7.0-alpha.2"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "5.6.3",

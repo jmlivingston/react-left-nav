@@ -8,7 +8,6 @@
     "start": "cd packages/react-left-nav && npm start",
     "start-demo": "cd packages/demo && npm run start",
     "build": "cd packages/react-left-nav && npm run build",
-    "publish": "cd packages/react-left-nav && npm run publish",
     "precommit": "lint-staged",
     "lint": "node node_modules/eslint/bin/eslint.js --max-warnings=0 packages/demo/src && node node_modules/eslint/bin/eslint.js --max-warnings=0 packages/react-left-nav/src"
   },
@@ -23,7 +22,7 @@
     "extends": "./node_modules/eslint-config-react-app/index.js",
     "settings": {
       "react": {
-        "version": "16.7.0"
+        "version": "16.7.0-alpha.2"
       }
     },
     "rules": {

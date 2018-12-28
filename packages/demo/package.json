@@ -10,7 +10,7 @@
     "bootstrap": "4.2.1",
     "prop-types": "15.6.2",
     "react-dom": "16.7.0-alpha.2",
-    "react-left-nav": "file:../react-left-nav/lib",
+    "react-left-nav": "0.0.1-beta.2",
     "react": "16.7.0-alpha.2"
   },
   "devDependencies": {

@@ -1,9 +1,9 @@
 {
   "name": "react-left-nav",
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1-beta.4",
   "description": "A simple responsive left nav (sidebar) for React.",
   "peerDependencies": {
-    "react": "16.x"
+    "react": "16.7.0-alpha.2"
   },
   "author": "John Livingston",
   "license": "MIT",
@@ -11,4 +11,4 @@
   "keywords": [
     "react-component"
   ]
-}
+}

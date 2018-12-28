@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState } from 'react'
+import React, { Suspense, lazy, useState } from 'react'
 import ReactDOM from 'react-dom'
 import '../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
@@ -8,8 +8,8 @@ const Content = lazy(() => import('react-left-nav/Content'))
 const DemoContent = lazy(() => import('./components/DemoContent'))
 const DemoHeader = lazy(() => import('./components/DemoHeader'))
 const LeftNav = lazy(() => import('react-left-nav/LeftNav'))
-const LeftNavItems = lazy(() => import('react-left-nav/LeftNavItems'))
 const LeftNavItem = lazy(() => import('react-left-nav/LeftNavItem'))
+const LeftNavItems = lazy(() => import('react-left-nav/LeftNavItems'))
 
 const Demo = () => {
   const [active, setActive] = useState(0)
@@ -49,7 +49,6 @@ const Demo = () => {
 
   const headerSize = 56
 
-  //
   return (
     <Suspense fallback={null}>
       <DemoHeader />
@@ -57,11 +56,6 @@ const Demo = () => {
         <LeftNavItems>
           {items.map((item, index) => {
             return <LeftNavItem key={item.title} {...item} onClick={() => setActive(item.id)} />
-            // return (
-            //   <li key={item.title}>
-            //     <div onClick={() => setActive(item.id)}>{item.title}</div>
-            //   </li>
-            // )
           })}
         </LeftNavItems>
       </LeftNav>
