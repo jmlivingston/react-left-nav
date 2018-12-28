@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react'
 import { render } from 'react-dom'
-
 import Content from '../../src/Content'
 import LeftNav from '../../src/LeftNav'
 
