@@ -1,0 +1,31 @@
+.left-nav {
+  height: 100%;
+  left: -16em;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  transition: all 0.075s ease-in;
+  width: 16em;
+}
+
+/* Small width */
+@media (min-width: 42em) {
+  .left-nav {
+    left: 0;
+    width: 4em;
+  }
+}
+
+/* Medium width */
+@media (min-width: 54em) {
+  .left-nav {
+    width: 8em;
+  }
+}
+
+/* Large width */
+@media (min-width: 68em) {
+  .left-nav {
+    width: 16em;
+  }
+}

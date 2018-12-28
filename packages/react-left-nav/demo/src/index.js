@@ -2,6 +2,8 @@ import React, { Component, Fragment } from 'react'
 import { render } from 'react-dom'
 import Content from '../../src/Content'
 import LeftNav from '../../src/LeftNav'
+import LeftNavItems from '../../src/LeftNavItems'
+import './index.css'
 
 const items = [
   {
@@ -31,8 +33,14 @@ class Demo extends Component {
   render() {
     return (
       <Fragment>
-        <LeftNav items={items} />
-        <Content>test</Content>
+        <LeftNav>
+          <LeftNavItems items={items} />
+        </LeftNav>
+        <Content>
+          <div className="content-inner">
+            <h1>test</h1>
+          </div>
+        </Content>
       </Fragment>
     )
   }

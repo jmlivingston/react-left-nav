@@ -5,7 +5,10 @@
     "packages/react-left-nav/lib"
   ],
   "scripts": {
-    "start": "lerna run --parallel start",
+    "start": "cd packages/react-left-nav && npm start",
+    "start-demo": "cd packages/demo && npm run start",
+    "build": "cd packages/react-left-nav && npm run postbuild",
+    "publish": "cd packages/react-left-nav && npm run publish",
     "precommit": "lint-staged",
     "lint": "node node_modules/eslint/bin/eslint.js --max-warnings=0 packages/demo/src && node node_modules/eslint/bin/eslint.js --max-warnings=0 packages/react-left-nav/src"
   },
@@ -50,7 +53,7 @@
   },
   "lint-staged": {
     "linters": {
-      "packages/**/{src,lib}/*.{css,html,js,md}": [
+      "packages/**/{src,lib}/*.{html,js}": [
         "prettier --write",
         "npm run lint",
         "git add"
