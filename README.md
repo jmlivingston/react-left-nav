@@ -1,4 +1,4 @@
-# Responsive React Left Nav
+# Responsive React Left Nav 
 
 > Warning: This is a placeholder for a future library and uses an alpha version of React. Do not use in production and use at your own risk.
 
