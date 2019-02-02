@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 import useMediaQuery from './hooks/useMediaQuery'
-import styles from './styles'
+import styles from './Styles'
 
 const LeftNavItem = props => {
   const {

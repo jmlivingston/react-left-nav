@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import styles from './styles'
+import styles from './Styles'
 
 const LeftNavItems = ({ children }) => (
   <ul className="left-nav-items" style={styles.leftNavItems}>

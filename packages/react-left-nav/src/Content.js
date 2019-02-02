@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import useMediaQuery from './hooks/useMediaQuery'
-import styles from './styles'
+import styles from './Styles'
 
 const Content = ({ children, style = {}, breakPoints = styles.contentBreakPoints }) => {
   const breakPointStyle = useMediaQuery(breakPoints)
